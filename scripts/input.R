@@ -41,3 +41,7 @@ protese[`LADO TXA` == "Esq"]$ctr <- protese[`LADO TXA` == "Esq"]$DIR
 
 face <- face[, .(SEQ, DATA, DIR, ESQ, LADO=`LADO TXA`, Citometria, txa, ctr)]
 protese <- protese[, .(SEQ, DATA, DIR, ESQ, LADO=`LADO TXA`, COR=COLORAÇÃO, txa, ctr)]
+
+# trim empty rows
+face <- face[!(SEQ %in% 17:20)]
+protese <- protese[!(SEQ %in% 39:50)]
