@@ -56,11 +56,12 @@ Aprovação final                   __________________________   _____________
 # Metodologia
 
 ## Tamanho do estudo
+
 Com base no levantamento piloto retrospectivo, os pacientes operados sem intervenção por TXA na face tiveram dreno médio de 10ml, com desvio padrão 6ml.
-Assumindo que os drenos sejam normalmente distribuídos para este procedimento cirúrgico espera-se que aproximadamente 65% dos pacientes tenham dreno entre 4 e 16ml.
+Assumindo que os drenos sejam normalmente distribuídos para este procedimento cirúrgico se espera que aproximadamente 65% dos pacientes tenham dreno entre 4 e 16ml.
 Considerando que uma redução de 10ml para 5ml seja clinicamente relevante, esta é a diferença definida como alvo do estudo.
 Se o dreno médio real for 10ml, contra 5ml sob intervenção do TXA, um estudo com 30 pacientes tem 99% de probabilidade de detectar esta diferença ao nível de 5% de significância (e 95% de probabilidade de detectá-la ao nível de 1% de significância).
-Um estudo com apenas metade desse tamanho teria 85% ao nível de significância de 5% e apenas 60% ao nível de 1% de signicância), que não é aceitável neste contexto.
+Um estudo com apenas metade desse tamanho teria 85% ao nível de significância de 5% e apenas 60% ao nível de 1% de significância), que não é aceitável neste contexto.
 
 ## Variáveis coletadas
 
