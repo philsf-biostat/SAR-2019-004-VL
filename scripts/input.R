@@ -2,8 +2,9 @@ library(readxl)
 library(data.table)
 library(stringr)
 
-face <- read_excel("dataset/Resultados TXA Felipe.xlsx",
-                   sheet = "face", skip = 1)
+# colunas extras (vazias) não importadas do dataset
+face <- read_excel("dataset/Resultados TXA Felipe.xlsx", 
+                   sheet = "face", range = "A3:L22")
 face <- data.table(face)
 
 # data management ---------------------------------------------------------
