@@ -16,7 +16,7 @@ Efetividade do uso de Áxido tranexâmico na redução de edema em cirurgias pl�
 
 [Ver as etapas desta análise][releases].
 
-**Versão 01 - xxx** - [Em elaboração][milestone-prequal].
+**Versão 01** - [Em elaboração][milestone-prequal].
 
 [Planejamento][v01-project].
 
@@ -31,10 +31,10 @@ Efetividade do uso de Áxido tranexâmico na redução de edema em cirurgias pl�
 <!-- - Download -->
 
 [releases]: https://github.com/philsf-biostat/analise_dados_VL_2019b/releases/
-[milestone-prequal]: https://github.com/philsf-biostat/analise_dados_VL_2019b/milestone/xxx
+[milestone-prequal]: https://github.com/philsf-biostat/analise_dados_VL_2019b/milestone/1
 [reportviz-v01]: report/analise_dados_VL_2019b-v01.md
 [docx-v01]: report/analise_dados_VL_2019b-v01.docx?raw=true
-[v01-project]: https://github.com/philsf-biostat/analise_dados_VL_2019b/projects/xxx
+[v01-project]: https://github.com/philsf-biostat/analise_dados_VL_2019b/projects/1
 
 <!-- [milestone-posqual]: https://github.com/philsf-biostat/analise_dados_VL_2019b/milestone/xxx -->
 <!-- [reportviz-v02]: report/xxx-v02.md -->
