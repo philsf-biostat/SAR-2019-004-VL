@@ -4,7 +4,7 @@ library(stringr)
 
 # data management ---------------------------------------------------------
 protese <- read_excel("dataset/Resultados TXA Felipe.xlsx",
-                      sheet = "protese", skip = 1)
+                      sheet = "protese", range = "A3:I41")
 protese <- data.table(protese)
 
 protese[str_to_lower(`LADO TXA`) == "esq"]$`LADO TXA` <- "Esq"
