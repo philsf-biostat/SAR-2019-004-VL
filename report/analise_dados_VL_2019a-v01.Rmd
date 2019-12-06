@@ -19,7 +19,7 @@ output:
     fig_width: 6
     reference_docx: misc/style.docx
     toc: yes
-subtitle: 'RELATÓRIO: analise_dados_VL_2019-v01'
+subtitle: 'RELATÓRIO: analise_dados_VL_2019-v01a'
 toc-title: "Sumário"
 ---
 
