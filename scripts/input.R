@@ -2,26 +2,7 @@ library(readxl)
 library(data.table)
 library(stringr)
 
-# colunas extras (vazias) não importadas do dataset
-face <- read_excel("dataset/Resultados TXA Felipe.xlsx", 
-                   sheet = "face", range = "A3:L22")
-face <- data.table(face)
-
 # data management ---------------------------------------------------------
-face[str_to_lower(`LADO TXA`) == "esq"]$`LADO TXA` <- "Esq"
-face[str_to_lower(`LADO TXA`) == "dir"]$`LADO TXA` <- "Dir"
-face$`LADO TXA` <- factor(face$`LADO TXA`)
-
-face$txa <- rep(as.numeric(NA), nrow(face))
-face$ctr <- rep(as.numeric(NA), nrow(face))
-
-face[`LADO TXA` == "Dir"]$txa <- face[`LADO TXA` == "Dir"]$DIR
-face[`LADO TXA` == "Esq"]$txa <- face[`LADO TXA` == "Esq"]$ESQ
-face[`LADO TXA` == "Dir"]$ctr <- face[`LADO TXA` == "Dir"]$ESQ
-face[`LADO TXA` == "Esq"]$ctr <- face[`LADO TXA` == "Esq"]$DIR
-
-# protese -----------------------------------------------------------------
-
 protese <- read_excel("dataset/Resultados TXA Felipe.xlsx",
                       sheet = "protese", skip = 1)
 protese <- data.table(protese)
@@ -39,8 +20,6 @@ protese[`LADO TXA` == "Dir"]$ctr <- protese[`LADO TXA` == "Dir"]$ESQ
 protese[`LADO TXA` == "Esq"]$ctr <- protese[`LADO TXA` == "Esq"]$DIR
 
 # trim cols ---------------------------------------------------------------
-
-face <- face[, .(SEQ, DATA, DIR, ESQ, LADO=`LADO TXA`, COR=COLORAÇÃO, txa, ctr)]
 protese <- protese[, .(SEQ, DATA, DIR, ESQ, LADO=`LADO TXA`, COR=COLORAÇÃO, txa, ctr)]
 
 # trim empty rows
