@@ -24,3 +24,6 @@ protese <- protese[, .(SEQ, DATA, DIR, ESQ, LADO=`LADO TXA`, COR=COLORAÇÃO, tx
 
 # trim empty rows
 protese <- protese[!(SEQ %in% 39:50)]
+
+# long format -------------------------------------------------------------
+protese.long <- tidyr::gather(data = protese[, -"COR" ], key = "group", value = "dreno", ctr, txa)
