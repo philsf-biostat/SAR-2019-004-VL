@@ -70,6 +70,10 @@ colnames(sigs) <- c("Papel", "Nome", "Função", "Assinatura", "Data")
 kable(sigs)
 ```
 
+```{r resultados}
+source('scripts/results.R', encoding = 'UTF-8')
+```
+
 # Lista de abreviaturas
 
 # Introdução
@@ -95,6 +99,14 @@ Um estudo com apenas metade desse tamanho teria 85% ao nível de significância 
 Esta análise foi realizada utilizando-se o software `R` versão `r getRversion()`.
 
 # Resultados
+
+## Descrição da amostra de estudo
+
+```{r}
+pander(tabela.desc)
+```
+
+Table: **Tabela 1** Características demográficas da amostra do estudo piloto.
 
 <!-- # Exceções e Desvios do teste -->
 

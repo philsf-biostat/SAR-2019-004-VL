@@ -19,7 +19,7 @@ output:
     fig_width: 6
     reference_docx: misc/style.docx
     toc: yes
-subtitle: 'RELATÓRIO: analise_dados_VL_2019-v01'
+subtitle: 'RELATÓRIO: analise_dados_VL_2019-v01a'
 toc-title: "Sumário"
 ---
 
@@ -44,6 +44,8 @@ Papel             Nome   Função   Assinatura                   Data
 Elaborador        Nome   Função   __________________________   _____________ 
 Revisado por                      __________________________   _____________ 
 Aprovação final                   __________________________   _____________ 
+
+
 
 # Lista de abreviaturas
 
@@ -70,6 +72,51 @@ Um estudo com apenas metade desse tamanho teria 85% ao nível de significância 
 Esta análise foi realizada utilizando-se o software `R` versão 3.6.1.
 
 # Resultados
+
+## Descrição da amostra de estudo
+
+
+-----------------------------
+      Group          value   
+----------------- -----------
+  Observations               
+
+                      38     
+
+      Sexo                   
+
+        F           0% (0)   
+
+        M           0% (0)   
+
+     missing       100% (38) 
+
+      Idade                  
+
+    Mean (SD)      NaN (NA)  
+
+ valid (missing)    0 (38)   
+
+     Altura                  
+
+    Mean (SD)      NaN (NA)  
+
+ valid (missing)    0 (38)   
+
+      Peso                   
+
+    Mean (SD)      NaN (NA)  
+
+ valid (missing)    0 (38)   
+
+       IMC                   
+
+    Mean (SD)      NaN (NA)  
+
+ valid (missing)    0 (38)   
+-----------------------------
+
+Table: **Tabela 1** Características demográficas da amostra do estudo piloto.
 
 <!-- # Exceções e Desvios do teste -->
 
