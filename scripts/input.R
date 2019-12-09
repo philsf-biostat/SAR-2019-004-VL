@@ -10,11 +10,11 @@ protese <- data.table(protese)
 protese[str_to_lower(`LADO TXA`) == "esq"]$`LADO TXA` <- "Esq"
 protese[str_to_lower(`LADO TXA`) == "dir"]$`LADO TXA` <- "Dir"
 protese$`LADO TXA` <- factor(protese$`LADO TXA`)
-face$Sexo <- factor(rep(NA, nrow(face)), levels = c("F", "M"))
-face$Idade <- rep(as.numeric(NA), nrow(face))
-face$Altura <- rep(as.numeric(NA), nrow(face))
-face$Peso <- rep(as.numeric(NA), nrow(face))
-face$IMC <- rep(as.numeric(NA), nrow(face)) #face$Peso/(face$Altura^2)
+protese$Sexo <- factor(rep(NA, nrow(protese)), levels = c("F", "M"))
+protese$Idade <- rep(as.numeric(NA), nrow(protese))
+protese$Altura <- rep(as.numeric(NA), nrow(protese))
+protese$Peso <- rep(as.numeric(NA), nrow(protese))
+protese$IMC <- rep(as.numeric(NA), nrow(protese)) #protese$Peso/(protese$Altura^2)
 
 protese$txa <- rep(as.numeric(NA), nrow(protese))
 protese$ctr <- rep(as.numeric(NA), nrow(protese))
