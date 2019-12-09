@@ -70,6 +70,10 @@ colnames(sigs) <- c("Papel", "Nome", "Função", "Assinatura", "Data")
 kable(sigs)
 ```
 
+```{r resultados}
+source('scripts/results.R', encoding = 'UTF-8')
+```
+
 # Lista de abreviaturas
 
 # Introdução
