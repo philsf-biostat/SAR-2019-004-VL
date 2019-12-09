@@ -100,6 +100,14 @@ Esta análise foi realizada utilizando-se o software `R` versão `r getRversion(
 
 # Resultados
 
+## Descrição da amostra de estudo
+
+```{r}
+pander(tabela.desc)
+```
+
+Table: **Tabela 1** Características demográficas da amostra do estudo piloto.
+
 <!-- # Exceções e Desvios do teste -->
 
 # Conclusões
