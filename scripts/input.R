@@ -20,7 +20,16 @@ protese[`LADO TXA` == "Dir"]$ctr <- protese[`LADO TXA` == "Dir"]$ESQ
 protese[`LADO TXA` == "Esq"]$ctr <- protese[`LADO TXA` == "Esq"]$DIR
 
 # trim cols ---------------------------------------------------------------
-protese <- protese[, .(SEQ, DATA, DIR, ESQ, LADO=`LADO TXA`, COR=COLORAÇÃO, txa, ctr)]
+protese <- protese[, .(
+  SEQ,
+  DATA,
+  DIR,
+  ESQ,
+  LADO=`LADO TXA`,
+  COR=COLORAÇÃO,
+  txa,
+  ctr
+  )]
 
 # trim empty rows
 protese <- protese[!(SEQ %in% 39:50)]
