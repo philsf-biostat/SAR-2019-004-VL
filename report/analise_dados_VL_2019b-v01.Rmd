@@ -108,6 +108,12 @@ pander(tabela.desc)
 
 Table: **Tabela 1** Características demográficas da amostra do estudo piloto.
 
+## Efetividade do tratamento
+
+```{r}
+pander(tabela.comp)
+```
+
 <!-- # Exceções e Desvios do teste -->
 
 # Conclusões
