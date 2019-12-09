@@ -27,6 +27,11 @@ protese[`LADO TXA` == "Esq"]$ctr <- protese[`LADO TXA` == "Esq"]$DIR
 # trim cols ---------------------------------------------------------------
 protese <- protese[, .(
   SEQ,
+  Sexo,
+  Idade,
+  Altura,
+  Peso,
+  IMC,
   DATA,
   DIR,
   ESQ,
