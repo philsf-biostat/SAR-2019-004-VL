@@ -43,3 +43,4 @@ protese <- protese[!(SEQ %in% 39:50)]
 
 # long format -------------------------------------------------------------
 protese.long <- tidyr::gather(data = protese[, -"COR" ], key = "group", value = "dreno", ctr, txa)
+protese.long$group <- factor(protese.long$group)
