@@ -3,10 +3,10 @@ library(atable)
 library(tableone)
 
 tabela.desc <- atable::atable(protese, target_cols = c(
-  "Sexo",
-  "Idade",
-  "Altura",
-  "Peso",
+  "SEXO",
+  "IDADE",
+  "ALTURA",
+  "PESO",
   "IMC"
 ), format_to = "Console")
 
