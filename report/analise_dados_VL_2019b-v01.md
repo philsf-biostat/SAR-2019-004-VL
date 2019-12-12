@@ -83,31 +83,37 @@ Esta análise foi realizada utilizando-se o software `R` versão 3.6.1.
 
                       38     
 
-      Sexo                   
+      SEXO                   
 
-        F           0% (0)   
+        F          100% (38) 
 
         M           0% (0)   
 
+     missing        0% (0)   
+
+      IDADE                  
+
+       yes          0% (0)   
+
+       no           0% (0)   
+
      missing       100% (38) 
 
-      Idade                  
+     ALTURA                  
 
-    Mean (SD)      NaN (NA)  
+       yes          0% (0)   
 
- valid (missing)    0 (38)   
+       no           0% (0)   
 
-     Altura                  
+     missing       100% (38) 
 
-    Mean (SD)      NaN (NA)  
+      PESO                   
 
- valid (missing)    0 (38)   
+       yes          0% (0)   
 
-      Peso                   
+       no           0% (0)   
 
-    Mean (SD)      NaN (NA)  
-
- valid (missing)    0 (38)   
+     missing       100% (38) 
 
        IMC                   
 
