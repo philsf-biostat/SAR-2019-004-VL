@@ -86,11 +86,15 @@ source('scripts/results.R', encoding = 'UTF-8')
 
 ## Tamanho do estudo
 
-Com base no levantamento piloto retrospectivo, os pacientes operados sem intervenção por TXA na face tiveram dreno médio de 10ml, com desvio padrão 6ml.
-Assumindo que os drenos sejam normalmente distribuídos para este procedimento cirúrgico se espera que aproximadamente 65% dos pacientes tenham dreno entre 4 e 16ml.
-Considerando que uma redução de 10ml para 5ml seja clinicamente relevante, esta é a diferença definida como alvo do estudo.
-Se o dreno médio real for 10ml, contra 5ml sob intervenção do TXA, um estudo com 30 pacientes tem 99% de probabilidade de detectar esta diferença ao nível de 5% de significância (e 95% de probabilidade de detectá-la ao nível de 1% de significância).
-Um estudo com apenas metade desse tamanho teria 85% ao nível de significância de 5% e apenas 60% ao nível de 1% de significância), que não é aceitável neste contexto.
+O cálculo do tamanho da amostra de um estudo requer a estipulação prévia do tamanho do efeito que os pesquisadores presumem ser possível detectar.
+Na ausência de estudos descritivos prévios estabelecendo as estatísticas descritivas típicas para determinação de tamanhos de efeito absolutos no cenário específico de um estudo, a determinação de um tamanho de efeito absoluto pode ser um desafio, pois nem sempre a média ou a variabilidade da população são conhecidas antes da intervenção do estudo.
+Na abordagem de Cohen (1988) de tamanhos de efeitos relativos utiliza-se a diferença normalizada **d** que é relativa à variabilidade na população alvo.
+Esta abordagem permite calcular tamanhos de amostra para detectar efeitos considerados pequenos (d em torno de 0.2 ou 0.3), médios (d em torno de 0.5) ou grandes (d em torno de 0.8 ou 1).
+Mas mesmo presumindo que TXA tenha tenha efeito relativo médio (em torno de d=0.5) no volume drenado pós-operatório, precisamos ainda diferenciar as particularidades da ritidoplastia e da mastoplastia.
+Como a área acometida na mastoplastia é substancialmente maior que na ritidoplastia, é razoável que haja mais variabilidade observável no volume drenado naquele procedimento o que pode dificultar a detecção do efeito do TXA, quando comparado à ritidoplastia.
+Estipulamos assim um efeito relativo para mastoplastia (d=0.4) ligeiramente menor do que para ritidoplastia (d=0.6).
+Para atingir poder de 80% ao nível de 5% de significância em um estudo pareado são necessários aproximadamente N=50 participantes de mastoplastia (d=0.4) e aproximadamente N=23 participantes de ritidoplastia (d=0.6).
+Assim o tamanho total do estudo é de N=73 participantes.
 
 ## Variáveis coletadas
 

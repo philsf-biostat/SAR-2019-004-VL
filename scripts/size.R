@@ -1,12 +1,10 @@
+library(pwr)
+
 # cálculo amostral --------------------------------------------------------
 
-power.t.test(delta = 5, sd = 6, power = .8, type = "paired") # 13~14
-power.t.test(delta = 5, sd = 6, power = .99, type = "paired") # 28~30
+pwr.t.test(power = 0.8, type = "paired", d = 0.4)
 
 # análise de poder --------------------------------------------------------
 
-# sample size = 30/15
-power.t.test(delta = 5, sd = 6, type = "paired", n = 30, sig.level = .05)
-power.t.test(delta = 5, sd = 6, type = "paired", n = 30, sig.level = .01)
-power.t.test(delta = 5, sd = 6, type = "paired", n = 15, sig.level = .01)
-power.t.test(delta = 5, sd = 6, type = "paired", n = 15, sig.level = .05)
+# sample size = 50
+pwr.t.test(power = 0.8, type = "paired", n = 51)
