@@ -30,6 +30,7 @@ options(scipen = 999)
 library(pander)
 library(knitr)
 library(philsfmisc)
+panderOptions('table.style', 'rmarkdown')
 ```
 
 ---
@@ -47,7 +48,7 @@ kable(history)
 
 ---
 
-# Assinaturas
+<!-- # Assinaturas -->
 
 ```{r, echo=FALSE}
 sig.field <- "__________________________"
@@ -67,7 +68,7 @@ rownames(sigs) <- NULL
 colnames(sigs) <- c("Papel", "Nome", "Função", "Assinatura", "Data")
 
 # pander(sigs, split.cells = c(9, 14, 14, 16, 8), split.table = Inf)
-kable(sigs)
+# kable(sigs)
 ```
 
 ```{r resultados}
@@ -75,6 +76,9 @@ source('scripts/results.R', encoding = 'UTF-8')
 ```
 
 # Lista de abreviaturas
+
+- SMD: diferença média padronizada (d de Cohen)
+- TXA: ácido tranexâmico
 
 # Introdução
 
@@ -100,7 +104,7 @@ Assim o tamanho total do estudo é de N=73 participantes.
 
 ## Análise estatística
 
-Esta análise foi realizada utilizando-se o software `R` versão `r getRversion()`.
+Esta análise foi realizada utilizando-se o software `R` versão 3.6.2.
 
 # Resultados
 
