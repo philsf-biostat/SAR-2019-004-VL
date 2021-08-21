@@ -112,13 +112,13 @@ pander(tabela.desc)
 
 Table: **Tabela 1** Características demográficas da amostra do estudo piloto.
 
-## Efetividade do tratamento
+## Eficácia do tratamento
 
 ```{r}
 pander(tabela.comp)
 ```
 
-Table: **Tabela 2** Avaliação da efetividade do tratamento com áxido tranexâmico (txa) em comparação ao lado controle (ctr);
+Table: **Tabela 2** Avaliação da eficácia do tratamento com áxido tranexâmico (txa) em comparação ao lado controle (ctr);
 SMD = standardized mean difference -- estimativa do tamanho do efeito observado
 
 <!-- # Exceções e Desvios do teste -->
