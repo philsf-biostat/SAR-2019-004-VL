@@ -1,7 +1,7 @@
 ---
-title: "Análise Estatística de ..."
+title: "Eficácia do Áxido tranexâmico na redução de edema em cirurgias plásticas de prótese mamária: projeto piloto"
 author: '**De:** Felipe Figueiredo **Para:** Victor Lima'
-date: '**Data: ** dd/mm/aaaa'
+date: '**Data:** 2020-02-04'
 output:
   html_document:
     fig_caption: yes
@@ -19,7 +19,7 @@ output:
     fig_width: 6
     reference_docx: misc/style.docx
     toc: yes
-subtitle: 'RELATÓRIO: analise_dados_VL_2019-v01a'
+subtitle: 'DOCUMENTO: analise_dados_VL_2019-v01a'
 toc-title: "Sumário"
 ---
 
@@ -30,6 +30,7 @@ options(scipen = 999)
 library(pander)
 library(knitr)
 library(philsfmisc)
+panderOptions('table.style', 'rmarkdown')
 ```
 
 ---
@@ -47,7 +48,7 @@ kable(history)
 
 ---
 
-# Assinaturas
+<!-- # Assinaturas -->
 
 ```{r, echo=FALSE}
 sig.field <- "__________________________"
@@ -67,7 +68,7 @@ rownames(sigs) <- NULL
 colnames(sigs) <- c("Papel", "Nome", "Função", "Assinatura", "Data")
 
 # pander(sigs, split.cells = c(9, 14, 14, 16, 8), split.table = Inf)
-kable(sigs)
+# kable(sigs)
 ```
 
 ```{r resultados}
@@ -75,6 +76,9 @@ source('scripts/results.R', encoding = 'UTF-8')
 ```
 
 # Lista de abreviaturas
+
+- SMD: diferença média padronizada (d de Cohen)
+- TXA: ácido tranexâmico
 
 # Introdução
 
@@ -100,7 +104,7 @@ Assim o tamanho total do estudo é de N=73 participantes.
 
 ## Análise estatística
 
-Esta análise foi realizada utilizando-se o software `R` versão `r getRversion()`.
+Esta análise foi realizada utilizando-se o software `R` versão 3.6.2.
 
 # Resultados
 
@@ -112,13 +116,13 @@ pander(tabela.desc)
 
 Table: **Tabela 1** Características demográficas da amostra do estudo piloto.
 
-## Efetividade do tratamento
+## Eficácia do tratamento
 
 ```{r}
 pander(tabela.comp)
 ```
 
-Table: **Tabela 2** Avaliação da efetividade do tratamento com áxido tranexâmico (txa) em comparação ao lado controle (ctr);
+Table: **Tabela 2** Avaliação da eficácia do tratamento com áxido tranexâmico (txa) em comparação ao lado controle (ctr);
 SMD = standardized mean difference -- estimativa do tamanho do efeito observado
 
 <!-- # Exceções e Desvios do teste -->

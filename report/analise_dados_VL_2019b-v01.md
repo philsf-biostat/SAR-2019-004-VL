@@ -1,7 +1,7 @@
 ---
-title: "Análise Estatística de ..."
+title: "Eficácia do Áxido tranexâmico na redução de edema em cirurgias plásticas de prótese mamária: projeto piloto"
 author: '**De:** Felipe Figueiredo **Para:** Victor Lima'
-date: '**Data: ** dd/mm/aaaa'
+date: '**Data:** 2020-02-04'
 output:
   html_document:
     fig_caption: yes
@@ -19,7 +19,7 @@ output:
     fig_width: 6
     reference_docx: misc/style.docx
     toc: yes
-subtitle: 'RELATÓRIO: analise_dados_VL_2019-v01a'
+subtitle: 'DOCUMENTO: analise_dados_VL_2019-v01a'
 toc-title: "Sumário"
 ---
 
@@ -30,24 +30,22 @@ toc-title: "Sumário"
 **Histórico do documento**
 
 
-Versão   Alterações     
--------  ---------------
-01       Versão inicial 
+|Versão |Alterações     |
+|:------|:--------------|
+|01     |Versão inicial |
 
 ---
 
-# Assinaturas
+<!-- # Assinaturas -->
 
 
-Papel             Nome   Função   Assinatura                   Data          
-----------------  -----  -------  ---------------------------  --------------
-Elaborador        Nome   Função   __________________________   _____________ 
-Revisado por                      __________________________   _____________ 
-Aprovação final                   __________________________   _____________ 
 
 
 
 # Lista de abreviaturas
+
+- SMD: diferença média padronizada (d de Cohen)
+- TXA: ácido tranexâmico
 
 # Introdução
 
@@ -80,66 +78,41 @@ Esta análise foi realizada utilizando-se o software `R` versão 3.6.2.
 ## Descrição da amostra de estudo
 
 
------------------------------
-      Group          value   
------------------ -----------
-  Observations               
-
-                      38     
-
-      SEXO                   
-
-        F          100% (38) 
-
-        M           0% (0)   
-
-     missing        0% (0)   
-
-      IDADE                  
-
-       yes          0% (0)   
-
-       no           0% (0)   
-
-     missing       100% (38) 
-
-     ALTURA                  
-
-       yes          0% (0)   
-
-       no           0% (0)   
-
-     missing       100% (38) 
-
-      PESO                   
-
-       yes          0% (0)   
-
-       no           0% (0)   
-
-     missing       100% (38) 
-
-       IMC                   
-
-    Mean (SD)      NaN (NA)  
-
- valid (missing)    0 (38)   
------------------------------
+|      Group      |   value   |
+|:---------------:|:---------:|
+|  Observations   |           |
+|                 |    38     |
+|      SEXO       |           |
+|        F        | 100% (38) |
+|        M        |  0% (0)   |
+|     missing     |  0% (0)   |
+|      IDADE      |           |
+|       yes       |  0% (0)   |
+|       no        |  0% (0)   |
+|     missing     | 100% (38) |
+|     ALTURA      |           |
+|       yes       |  0% (0)   |
+|       no        |  0% (0)   |
+|     missing     | 100% (38) |
+|      PESO       |           |
+|       yes       |  0% (0)   |
+|       no        |  0% (0)   |
+|     missing     | 100% (38) |
+|       IMC       |           |
+|    Mean (SD)    | NaN (NA)  |
+| valid (missing) |  0 (38)   |
 
 Table: **Tabela 1** Características demográficas da amostra do estudo piloto.
 
-## Efetividade do tratamento
+## Eficácia do tratamento
 
 
-------------------------------------------------------------------------------
-        &nbsp;                ctr             txa          p     test    SMD  
------------------------ --------------- --------------- ------- ------ -------
-         **n**                38              38                              
+|        &nbsp;         |      ctr      |      txa      |   p   | test |  SMD  |
+|:---------------------:|:-------------:|:-------------:|:-----:|:----:|:-----:|
+|         **n**         |      38       |      38       |       |      |       |
+| **dreno (mean (SD))** | 52.71 (18.63) | 46.58 (15.90) | 0.127 |      | 0.354 |
 
- **dreno (mean (SD))**   52.71 (18.63)   46.58 (15.90)   0.127          0.354 
-------------------------------------------------------------------------------
-
-Table: **Tabela 2** Avaliação da efetividade do tratamento com áxido tranexâmico (txa) em comparação ao lado controle (ctr);
+Table: **Tabela 2** Avaliação da eficácia do tratamento com áxido tranexâmico (txa) em comparação ao lado controle (ctr);
 SMD = standardized mean difference -- estimativa do tamanho do efeito observado
 
 <!-- # Exceções e Desvios do teste -->
