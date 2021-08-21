@@ -1,7 +1,7 @@
 ---
-title: "Análise Estatística de ..."
+title: "Eficácia do Áxido tranexâmico na redução de edema em cirurgias plásticas de prótese mamária: projeto piloto"
 author: '**De:** Felipe Figueiredo **Para:** Victor Lima'
-date: '**Data: ** dd/mm/aaaa'
+date: '**Data:** 2020-02-04'
 output:
   html_document:
     fig_caption: yes
@@ -19,7 +19,7 @@ output:
     fig_width: 6
     reference_docx: misc/style.docx
     toc: yes
-subtitle: 'RELATÓRIO: analise_dados_VL_2019-v01a'
+subtitle: 'DOCUMENTO: analise_dados_VL_2019-v01a'
 toc-title: "Sumário"
 ---
 

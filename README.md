@@ -1,4 +1,4 @@
-# Eficácia do Áxido tranexâmico na redução de edema em cirurgias plásticas de prótese mamária: projeto piloto
+# Eficácia do Ácido tranexâmico na redução de edema em cirurgias plásticas de prótese mamária: projeto piloto
 
 Análise de Dados projeto piloto em cirurgias plásticas de prótese mamária (D'Or, 2019)
 
