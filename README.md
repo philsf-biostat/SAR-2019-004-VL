@@ -34,7 +34,7 @@ Análise de Dados projeto piloto em cirurgias plásticas de prótese mamária (D
 [milestone-prequal]: https://github.com/philsf-biostat/analise_dados_VL_2019b/milestone/1
 [reportviz-v01]: report/analise_dados_VL_2019b-v01.md
 [docx-v01]: report/analise_dados_VL_2019b-v01.docx?raw=true
-[pdf-v01]: report/analise_dados_VL_2019b-v01.docx?raw=true
+[pdf-v01]: report/analise_dados_VL_2019b-v01.pdf?raw=true
 [v01-project]: https://github.com/philsf-biostat/analise_dados_VL_2019b/projects/1
 
 <!-- [milestone-posqual]: https://github.com/philsf-biostat/analise_dados_VL_2019b/milestone/xxx -->
