@@ -58,6 +58,8 @@ kable(history)
 
 ## Objetivos
 
+Avaliar a eficácia do ácido tranexâmico na redução de volume de dreno em cirurgias de prótese mamária pareando lados randomizados de cada paciente.
+
 ## Recepção e tratamento dos dados
 
 # Metodologia

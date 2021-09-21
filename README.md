@@ -1,6 +1,6 @@
 # Eficácia do Ácido tranexâmico na redução de edema em cirurgias plásticas de prótese mamária: projeto piloto
 
-Objetivo
+Avaliar a eficácia do ácido tranexâmico na redução de volume de dreno em cirurgias de prótese mamária pareando lados randomizados de cada paciente.
 
 Análise de Dados projeto piloto em cirurgias plásticas de prótese mamária (D'Or, 2019)
 
