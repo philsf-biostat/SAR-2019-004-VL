@@ -1,43 +1,57 @@
 # Eficácia do Ácido tranexâmico na redução de edema em cirurgias plásticas de prótese mamária: projeto piloto
 
+Objetivo
+
 Análise de Dados projeto piloto em cirurgias plásticas de prótese mamária (D'Or, 2019)
 
 ## Análises realizadas
 
-1. Descritiva e comparativa ([Planejamento][proj-results])
-<!-- 2. yyy ([Planejamento][proj-yyy]) -->
-<!-- 3. zzz ([Planejamento][proj-zzz]) -->
+1. Análise descritiva
+1. Análise inferencial
+1. Análise de poder
+<!-- 1. Modelagem estatística -->
 
-[proj-results]: https://github.com/philsf-biostat/analise_dados_VL_2019b/projects/3
-[proj-yyy]: https://github.com/philsf-biostat/analise_dados_VL_2019b/projects/yyy
-[proj-zzz]: https://github.com/philsf-biostat/analise_dados_VL_2019b/projects/zzz
+## Documentos
 
-## Relatório da análise de dados
+### Plano Analítico (SAP)
 
-[Ver as etapas desta análise][releases].
+<!-- - [Visualização online][sapviz-v02] -->
+<!-- - [Download][sappdf-v02] -->
 
-**Versão 01** - [Concluído][milestone-prequal].
+- [Visualização online][sapviz-v01]
+- [PDF][sappdf-v01]
 
-[Planejamento][v01-project].
-
-- [Visualização online][reportviz-v01]
-- [Download][pdf-v01]
-
-<!-- **Versão 02 - Defesa** - [Em elaboração][milestone-posqual]. -->
-
-<!-- [Planejamento][v02-project]. -->
+### Relatório de Análise Estatística (SAR)
 
 <!-- - [Visualização online][reportviz-v02] -->
-<!-- - Download -->
+<!-- - [Download][pdf-v02] -->
 
-[releases]: https://github.com/philsf-biostat/analise_dados_VL_2019b/releases/
-[milestone-prequal]: https://github.com/philsf-biostat/analise_dados_VL_2019b/milestone/1
-[reportviz-v01]: report/analise_dados_VL_2019b-v01.md
-[docx-v01]: report/analise_dados_VL_2019b-v01.docx?raw=true
-[pdf-v01]: report/analise_dados_VL_2019b-v01.pdf?raw=true
-[v01-project]: https://github.com/philsf-biostat/analise_dados_VL_2019b/projects/1
+- [Visualização online][reportviz-v01]
+- [PDF][pdf-v01]
 
-<!-- [milestone-posqual]: https://github.com/philsf-biostat/analise_dados_VL_2019b/milestone/xxx -->
-<!-- [reportviz-v02]: report/xxx-v02.md -->
-<!-- [docx-v02]: report/xxx-v02.docx?raw=true -->
-<!-- [v02-project]: https://github.com/philsf-biostat/analise_dados_VL_2019b/projects/xxx -->
+## Portfólio
+
+Esta análise está incluída no portfólio do consultor.
+Outras análises também podem ser vistas em:
+
+https://philsf-biostat.github.io/
+
+<!-- --- -->
+
+[sapviz-v01]: report/SAP-2019-004-VL-v01.md
+[sapviz-v02]: report/SAP-2019-004-VL-v02.md
+[sappdf-v01]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2019-004-VL/raw/master/report/SAP-2019-004-VL-v01.pdf
+[sappdf-v02]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2019-004-VL/raw/master/report/SAP-2019-004-VL-v02.pdf
+
+[reportviz-v01]: report/SAR-2019-004-VL-v01.md
+[reportviz-v02]: report/SAR-2019-004-VL-v02.md
+[pdf-v01]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2019-004-VL/raw/master/report/SAR-2019-004-VL-v01.pdf
+[pdf-v02]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2019-004-VL/raw/master/report/SAR-2019-004-VL-v02.pdf
+[docx-v01]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2019-004-VL/raw/master/report/SAR-2019-004-VL-v01.docx
+[docx-v02]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2019-004-VL/raw/master/report/SAR-2019-004-VL-v02.docx
+
+[releases]: https://github.com/philsf-biostat/SAR-2019-004-VL/releases/
+[milestone-v01]: https://github.com/philsf-biostat/SAR-2019-004-VL/milestone/mmm01
+[v01-project]: https://github.com/philsf-biostat/SAR-2019-004-VL/projects/ppp01
+[milestone-v02]: https://github.com/philsf-biostat/SAR-2019-004-VL/milestone/mmm02
+[v02-project]: https://github.com/philsf-biostat/SAR-2019-004-VL/projects/ppp02
