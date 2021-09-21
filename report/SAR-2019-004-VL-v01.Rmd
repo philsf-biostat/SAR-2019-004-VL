@@ -1,5 +1,6 @@
 ---
 title: "Eficácia do Áxido tranexâmico na redução de edema em cirurgias plásticas de prótese mamária: projeto piloto"
+subtitle: 'DOCUMENTO: SAR-2019-004-VL-v01'
 author: '**De:** Felipe Figueiredo **Para:** Victor Lima'
 date: '**Data:** 2020-02-04'
 output:
@@ -17,9 +18,8 @@ output:
     fig_caption: yes
     fig_height: 6
     fig_width: 6
-    reference_docx: misc/style.docx
+    reference_docx: misc/style_SAR_pt.docx
     toc: yes
-subtitle: 'DOCUMENTO: analise_dados_VL_2019-v01a'
 toc-title: "Sumário"
 ---
 
@@ -31,13 +31,14 @@ library(pander)
 library(knitr)
 library(philsfmisc)
 panderOptions('table.style', 'rmarkdown')
+panderOptions('table.split.table', 160)
 ```
 
 ---
 
 **Histórico do documento**
 
-```{r, echo = FALSE}
+```{r history}
 Version <- c("01")
 Changes <- c("Versão inicial")
 history <- cbind(Version, Changes)
@@ -47,33 +48,6 @@ kable(history)
 ```
 
 ---
-
-<!-- # Assinaturas -->
-
-```{r, echo=FALSE}
-sig.field <- "__________________________"
-date.field <- "_____________"
-Stat <- c("Elaborador", "Nome", "Função", sig.field, date.field)
-Reviewer <- c("Revisado por", "", "", sig.field, date.field)
-Approver <- c("Verificado por", "", "", sig.field, date.field)
-Final.Approver <- c("Aprovação final", "", "", sig.field, date.field)
-
-sigs <- rbind(
-  Stat
-  , Reviewer
-  # , Approver
-  , Final.Approver
-  )
-rownames(sigs) <- NULL
-colnames(sigs) <- c("Papel", "Nome", "Função", "Assinatura", "Data")
-
-# pander(sigs, split.cells = c(9, 14, 14, 16, 8), split.table = Inf)
-# kable(sigs)
-```
-
-```{r resultados}
-source('scripts/results.R', encoding = 'UTF-8')
-```
 
 # Lista de abreviaturas
 
@@ -88,6 +62,18 @@ source('scripts/results.R', encoding = 'UTF-8')
 
 # Metodologia
 
+```{r results, include=FALSE}
+source("scripts/results.R", encoding = 'UTF-8')
+```
+
+## Variáveis
+
+### Desfechos primário e secundário
+
+### Covariáveis
+
+## Análises Estatísticas
+
 ## Tamanho do estudo
 
 O cálculo do tamanho da amostra de um estudo requer a estipulação prévia do tamanho do efeito que os pesquisadores presumem ser possível detectar.
@@ -100,9 +86,7 @@ Estipulamos assim um efeito relativo para mastoplastia (d=0.4) ligeiramente meno
 Para atingir poder de 80% ao nível de 5% de significância em um estudo pareado são necessários aproximadamente N=50 participantes de mastoplastia (d=0.4) e aproximadamente N=23 participantes de ritidoplastia (d=0.6).
 Assim o tamanho total do estudo é de N=73 participantes.
 
-## Variáveis coletadas
-
-## Análise estatística
+## Softwares utilizados
 
 Esta análise foi realizada utilizando-se o software `R` versão 3.6.2.
 
@@ -111,26 +95,57 @@ Esta análise foi realizada utilizando-se o software `R` versão 3.6.2.
 ## Descrição da amostra de estudo
 
 ```{r}
-pander(tabela.desc)
+tabela.desc %>% pander(
+  caption = "**Tabela 1** Características demográficas da amostra do estudo piloto."
+)
 ```
 
-Table: **Tabela 1** Características demográficas da amostra do estudo piloto.
 
 ## Eficácia do tratamento
 
 ```{r}
-pander(tabela.comp)
+tabela.comp %>% pander(
+  caption = "**Tabela 2** Avaliação da eficácia do tratamento com áxido tranexâmico (txa) em comparação ao lado controle (ctr);
+SMD = standardized mean difference -- estimativa do tamanho do efeito observado."
+)
 ```
 
-Table: **Tabela 2** Avaliação da eficácia do tratamento com áxido tranexâmico (txa) em comparação ao lado controle (ctr);
-SMD = standardized mean difference -- estimativa do tamanho do efeito observado
 
-<!-- # Exceções e Desvios do teste -->
+# Exceções e Observações
 
 # Conclusões
 
-
 # Referências
+
+<!-- - **SAP-2019-004-VL-v01** -- Plano Analítico para title -->
+<!-- - Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd Ed.). New York: Routledge. -->
 
 # Apêndice
 
+## Análise exploratória de dados
+
+```{r A1, fig.cap="**Figura A1** Distribuição da idade na população do estudo."}
+# ![Age](../figures/distr_age.png)
+# knitr::include_graphics("../figures/distr_age.png", error = FALSE)
+```
+
+## Disponibilidade
+
+<!-- Tanto este documento como o plano analítico correspondente (**SAP-2019-004-VL-v01**) podem ser obtidos no seguinte endereço: -->
+
+Este documento pode ser obtido no seguinte endereço:
+
+https://github.com/philsf-biostat/SAR-2019-004-VL/
+
+## Dados utilizados
+
+Os dados utilizados neste relatório não podem ser publicados online por questões de sigilo.
+
+```{r data}
+# print analytical of analytical_mockup whether it is the private or public version of the SAR
+
+# analytical %>%
+#   pander(caption = "**Table A1** Tabela de dados analíticos")
+# analytical_mockup %>%
+  # pander(caption = "**Table A1** Estrutura da tabela de dados analíticos")
+```
